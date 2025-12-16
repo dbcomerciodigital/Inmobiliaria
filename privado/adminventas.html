@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Ventas</title>
+  <link rel="stylesheet" href="adminventas.css">
+</head>
+<body>
+  <header class="barra-superior">
+    <a href="../publico/index.html">
+      <img src="../publico/imagenes/logo2.png" alt="Logo casas.com" class="logo">
+    </a>
+    <nav class="navegacion-principal">
+      <a href="adminventas.html">Ventas</a>
+      <a href="adminalquiler.html">Alquiler</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="admin-layout">
+      <div id="contenedor-propiedades">
+        <h1 class="titulo">Propiedades en Ventas</h1>
+        <section id="propiedades-dinamicas"></section>
+      </div>
+  
+      <div id="contenedor-form">
+        <h1 class="titulo">Agregar casa en Venta</h1>
+        <form id="form-ventas">
+           <input type="text" name="titulo" placeholder="Título" required>
+
+           <select name="tipo" id="tipo" required>
+            <option hidden disabled selected>Tipo</option>
+            <option value="Casa">Casa</option>
+            <option value="Departamento">Departamento</option>
+            <option value="Terreno">Terreno</option>
+          </select>
+  
+          <textarea name="descripcion" placeholder="Descripción" required></textarea>
+          <input type="text" name="imagen" placeholder="Ruta de imagen" required>
+          <input type="text" name="localidad" placeholder="Localidad" required>
+          <input type="number" name="superficie" placeholder="Superficie (m²)" required>
+          <input type="number" name="ambientes" placeholder="Ambientes" required>
+          <input type="text" name="patio" placeholder="Patio (Sí/No)" required>
+          <input type="number" name="precio" placeholder="Precio" required>
+  
+          <button type="submit">Agregar propiedad</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+
+  <script src="adminventas.js"></script>
+</body>
+</html>
