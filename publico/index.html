@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Casas.com - El lugar para encontrar tu lugar</title>
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+
+    <body>
+        <div class="banner">
+            <header>
+                <a href="index.html">
+                    <img
+                        class="logo"
+                        src="imagenes/logo2.png"
+                        alt="Logo de casas.com"
+                    />
+                </a>
+
+                <nav>
+                    <div class="navegacion-principal">
+                        <a href="ventas.html">Ventas</a>
+                        <a href="alquiler.html">Alquiler</a>
+                        <a href="contactenos.html">Contáctenos</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="#">Noticias</a>
+                    </div>
+                </nav>
+
+                <div class="acciones-usuario">
+                    <a href="../privado/admin.html">Ingresar</a>
+                    <a href="#">Publicitar</a>
+                </div>
+            </header>
+
+            <div class="superposicion-principal">
+                <h1>El lugar para encontrar tu lugar</h1>
+                <form class="barra-busqueda">
+                    <select name="tipo-listado">
+                        <option value="venta">En venta</option>
+                        <option value="alquiler">En alquiler</option>
+                    </select>
+                    <input
+                        type="text"
+                        placeholder="A 10 minutos caminando de la Casa Rosada"
+                    />
+                    <button type="submit">
+                        <span
+                            ><img class="Boton-lupa" src="Imagenes/lupa.png"
+                        /></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sección Explorar Propiedades -->
+        <section class="explorar-propiedades">
+            <h2>Explorar propiedades</h2>
+            <br>
+
+            <ul class="categorias-explorar">
+                <li><a href="#">Nuevas en el mercado</a></li>
+                <li><a href="#">Más vistas</a></li>
+                <li><a href="#">Casas abiertas</a></li>
+                <li><a href="#">Bajaron de precio</a></li>
+            </ul>
+
+            <section class="grid-bloques">
+                <div class="bloque" style="grid-area: tarjeta1;">
+                    <img src="imagenes/barrios.jpg" alt="Barrios" />
+                    <div class="texto">
+                        <h3>Explorá barrios</h3>
+                        <p>
+                            Recorridos visuales de miles de zonas
+                            residenciales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloque" style="grid-area: tarjeta2;">
+                    <img src="imagenes/casanueva.jpg" alt="Casas nuevas" />
+                    <div class="texto">
+                        <h3>Casas nuevas</h3>
+                        <p>Modelos, planos y comunidades en desarrollo.</p>
+                    </div>
+                </div>
+
+                <div class="bloque" style="grid-area: tarjeta3;">
+                    <img src="imagenes/colegio-sarmiento.jpeg" alt="Escuelas" />
+                    <div class="texto">
+                        <h3>Escuelas destacadas</h3>
+                        <p>Opiniones reales y datos educativos por zona.</p>
+                    </div>
+                </div>
+
+                <div class="bloque" style="grid-area: tarjeta4;">
+                    <img src="imagenes/agentesinmobiliarios.jpg" alt="Agentes" />
+                    <div class="texto">
+                        <h3>Agentes inmobiliarios</h3>
+                        <p>
+                            Perfiles, experiencia y especialidades en tu región.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2025 Casas.com. Todos los derechos reservados.</p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
